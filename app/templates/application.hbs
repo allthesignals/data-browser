@@ -1,0 +1,22 @@
+<div class="ui fixed menu">
+  <div class="ui container">
+      {{#link-to 'application' class='item'}}
+        Data Browser
+      {{/link-to}}
+    <div class="right menu">
+      {{searchable-select content=searchables
+                          sortBy='title'
+                          on-change=(route-action 'selectDataset')
+                          cache=true
+                          prompt='Search Datasets'
+                          class='item'}}
+    </div>
+  </div>
+</div>
+
+
+
+<div style="margin-top: 80px;">
+  {{outlet}}
+</div>
+

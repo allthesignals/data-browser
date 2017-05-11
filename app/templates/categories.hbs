@@ -1,0 +1,15 @@
+<div class='ui container'>
+  <div class="ui four column stackable grid">
+    <div class="four wide column">
+      <div class="ui basic segment scrollable-menus">
+        <h3 class="ui dividing header">
+          Topics
+        </h3>
+        {{#liquid-bind model use='toUp'}}
+          {{menus-component model=model}}
+        {{/liquid-bind}}
+      </div>
+    </div>
+    {{outlet}}
+  </div>
+</div>

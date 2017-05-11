@@ -1,0 +1,116 @@
+<div style="position: fixed; bottom: 30px; right: 50px; z-index: 999;">
+  {{#if model.metadata.rows}}
+    {{#ui-popup content="Download Metadata" position='left center'}}
+      <a class="big circular orange ui icon button" href={{download_link_metadata}} download={{concat model.dataset.table_name '_meta'}}>
+        <i class="icon help"></i>
+      </a>
+    {{/ui-popup}}
+  {{/if}}
+  {{#ui-popup content="Download CSV" position='left center'}}
+    <a class="medium ui circular raised segment circular ui green icon button floating-menu" href={{download_link}} download={{model.dataset.table_name}}>
+      <i class="big file excel outline icon"></i>
+    </a>
+  {{/ui-popup}}
+  {{#if model.raw_data.spatialMetaData}}
+    {{#ui-popup content="Download Shapefile" position='left center'}}
+      <a class="medium ui circular raised segment circular ui blue icon button floating-menu" href={{download_link_shapefile}} download={{model.dataset.table_name}}>
+        <i class="big icon map"></i>
+      </a>
+    {{/ui-popup}}
+    {{#ui-popup content="Download Geojson" position='left center'}}
+      <a class="medium ui circular raised segment circular ui yellow icon button floating-menu" href={{download_link_geojson}} download={{model.dataset.table_name}}>
+        <i class="big icon map outline"></i>
+      </a>
+    {{/ui-popup}}
+    {{#ui-popup content="Visualize" position='left center'}}
+      <a class="medium ui circular raised segment circular ui pink icon button floating-menu" href={{download_link_visualize}} target='_blank'>
+        <i class="big icon map outline"></i>
+      </a>
+    {{/ui-popup}}
+  {{/if}}
+</div>
+
+{{#if (gt model.raw_data.rows.length perPage)}}
+  <div class="ui basic center aligned segment" style="position: fixed; width: 100%; bottom: 0; z-index: 999; pointer-events: none;">
+    <div class="ui button icon circular {{unless min 'disabled'}}" onclick={{action 'previous'}} style="pointer-events: all;">
+      <i class="ui left arrow icon"></i>
+    </div>
+    <div class="ui label">
+      Page {{page}}
+    </div>
+    <div class="ui button icon circular {{if (gte max model.raw_data.rows.length) 'disabled'}}" onclick={{action 'next'}} style="pointer-events: all;">
+      <i class="ui right arrow icon"></i>
+    </div>
+  </div>
+{{/if}}
+
+<div class="ui container">
+  <div class="ui segment">
+    <div class="ui clearing segment basic">
+      <h5 class="ui right floated icon header">
+        {{link-to '' 'categories.sub-categories.datasets' model.dataset.menu1 model.dataset.menu2 class='circular clickable icon left arrow' tagName='i'}}
+        <div class="sub header">Go Back</div>
+      </h5>
+      <h2 class="ui left floated header" style="max-width: 80%;">
+        <i class="ui grid layout icon"></i>
+        <div class="content">
+          {{model.dataset.menu3}}
+          <div class="sub header">
+            Database Table: {{model.dataset.schemaname}}.{{model.dataset.table_name}}<br/>
+            Source: {{model.dataset.source}}<br/>
+            {{#with (find-by 'name' 'universe' model.metadata.rows) as |universe|}}
+              Universe: {{universe.details}}
+            {{/with}}<br/>
+            {{#with (find-by 'name' 'descriptn' model.metadata.rows) as |descriptn|}}
+              Description: {{descriptn.details}}
+            {{/with}}
+          </div>
+        </div>
+      </h2>
+    </div>
+    <div class="ui basic segment">
+      {{#if model.years_available.length}}
+        <div class="ui label">
+          Select Years: 
+        </div>
+      {{/if}}
+      {{#each model.years_available as |year|}}
+        <a class="ui {{if year.selected 'blue'}} label" {{action 'toggle' year}}>
+          <i class="calendar icon"></i> {{year.year}}
+        </a>
+      {{/each}}
+    </div>
+
+    <div class="scroll-horizontal-rotated ui raised center aligned segment">
+      <div class="cancel-rotate">
+        <div class="ui inverted segment">
+          {{#unless model.dataset.isMunicipal}}
+            Note: Viewing First 50 rows; Filters apply only to data export.
+          {{else}}
+            Note: Viewing Latest Year available; Filters apply only to data export.
+          {{/unless}}
+        </div>
+        {{#if (not model.raw_data.errors)}}
+          {{ui-table model=(slice min max model.raw_data.rows) fields=model.raw_data.fields metadata=model.metadata.rows}}
+        {{else}}
+          {{#each model.raw_data.errors as |error|}}
+            <h3 class="ui icon header">
+              <i class="warning sign icon"></i>
+              <div class="content">
+                Oops. {{error.title}}.
+                <div class="sub header">
+                  More detail: 
+                  {{#each error.detail.error as |errorMessage|}}
+                    {{errorMessage}}; we probably just need to sync and/or update permissions for this dataset.<br/><br/> We've been notified of the error and will work on it. If you'd like to contact us, we can be reached at <a href="mailto:data@mapc.org">data@mapc.org</a>
+                  {{/each}}
+                </div>
+              </div>
+            </h3>
+          {{/each}}
+        {{/if}}
+      </div>
+    </div>
+    
+  </div>
+</div>
+{{outlet}}

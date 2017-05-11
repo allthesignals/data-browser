@@ -1,0 +1,16 @@
+<div class="divider-column">
+  <div class="ui vertical divider" style="height: 100%;">
+    <i class="ui icon right arrow"></i>
+  </div>
+</div>
+<div class="four wide column">
+  {{#liquid-bind model use='toUp'}}  
+    <div class="ui basic segment scrollable-menus">
+      <h4 class="ui dividing header">
+        {{model.firstObject.menu1}}
+      </h4>
+      {{menus-component model=model groupColumn='menu2' subRoute='categories.sub-categories.datasets'}}
+    </div>
+  {{/liquid-bind}}
+</div>
+{{outlet}}
