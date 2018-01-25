@@ -2,6 +2,9 @@
 
 This is a generic data catalog built for Carto users. It provides a configurable interface for users to navigate through different groupings of public datasets on a user's Carto account. [See it in action](http://databrowser.mapc.org/).
 
+# Preview
+![data_catalog](https://user-images.githubusercontent.com/5004319/35371709-be7204d6-0163-11e8-946e-3b54f5c8ad62.gif)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
