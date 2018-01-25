@@ -1,7 +1,6 @@
-# data-browser
+# Carto Data Catalog
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a generic data catalog built for Carto users. It provides a configurable interface for users to navigate through different groupings of public datasets on a user's Carto account. [See it in action](http://databrowser.mapc.org/).
 
 ## Prerequisites
 
