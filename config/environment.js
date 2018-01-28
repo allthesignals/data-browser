@@ -7,7 +7,7 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     dataBrowserIndex: 'configuration.json',
-    dataBrowserEndpoint: 'https://mapc-admin.carto.com/api/v2/sql?q=',
+    dataBrowserEndpoint: 'https://planninglabs.carto.com/api/v2/sql?q=',
     spatialJoinFields: [  { field: 'ct10_id', table: 'census_2010_tracts'}, 
                           { field: 'muni_id', table: 'ma_municipalities'}
                         ],
