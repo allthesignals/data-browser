@@ -1,33 +1,9 @@
 <div style="position: fixed; bottom: 30px; right: 50px; z-index: 999;">
-  {{#if model.metadata.rows}}
-    {{#ui-popup content="Download Metadata" position='left center'}}
-      <a class="big circular orange ui icon button" href={{download_link_metadata}} download={{concat model.dataset.table_name '_meta'}}>
-        <i class="icon help"></i>
-      </a>
-    {{/ui-popup}}
-  {{/if}}
   {{#ui-popup content="Download CSV" position='left center'}}
     <a class="medium ui circular raised segment circular ui green icon button floating-menu" href={{download_link}} download={{model.dataset.table_name}}>
       <i class="big file excel outline icon"></i>
     </a>
   {{/ui-popup}}
-  {{#if model.raw_data.spatialMetaData}}
-    {{#ui-popup content="Download Shapefile" position='left center'}}
-      <a class="medium ui circular raised segment circular ui blue icon button floating-menu" href={{download_link_shapefile}} download={{model.dataset.table_name}}>
-        <i class="big icon map"></i>
-      </a>
-    {{/ui-popup}}
-    {{#ui-popup content="Download Geojson" position='left center'}}
-      <a class="medium ui circular raised segment circular ui yellow icon button floating-menu" href={{download_link_geojson}} download={{model.dataset.table_name}}>
-        <i class="big icon map outline"></i>
-      </a>
-    {{/ui-popup}}
-    {{#ui-popup content="Visualize" position='left center'}}
-      <a class="medium ui circular raised segment circular ui pink icon button floating-menu" href={{download_link_visualize}} target='_blank'>
-        <i class="big icon map outline"></i>
-      </a>
-    {{/ui-popup}}
-  {{/if}}
 </div>
 
 {{#if (gt model.raw_data.rows.length perPage)}}
@@ -56,14 +32,9 @@
         <div class="content">
           {{model.dataset.menu3}}
           <div class="sub header">
-            Database Table: {{model.dataset.schemaname}}.{{model.dataset.table_name}}<br/>
+            Database Table: {{model.dataset.table_name}}<br/>
             Source: {{model.dataset.source}}<br/>
-            {{#with (find-by 'name' 'universe' model.metadata.rows) as |universe|}}
-              Universe: {{universe.details}}
-            {{/with}}<br/>
-            {{#with (find-by 'name' 'descriptn' model.metadata.rows) as |descriptn|}}
-              Description: {{descriptn.details}}
-            {{/with}}
+            Description: {{model.dataset.description}}
           </div>
         </div>
       </h2>

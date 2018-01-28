@@ -19,33 +19,14 @@ export default Ember.Route.extend({
       url += ' LIMIT 50;';
     }
 
-    let meta_url = `${config.dataBrowserEndpoint}select * from meta_${dataset.get('table_name')}`;
-    let years_url = `${config.dataBrowserEndpoint}select distinct(${yearcolumn}) from ${dataset.get('table_name')} limit 50`;
-    
-    // models
+    // fetch raw data for dataset
     let raw_data = this.get('ajax').request(url).then(function(raw_data) {
       return imputeSpatiality(raw_data);
-    }).catch(handleErrors);
-
-    let metadata = this.get('ajax').request(meta_url).then(function(metadata) {
-      return metadata;
-    }).catch(handleErrors);
-
-    let years_available = this.get('ajax').request(years_url).then(function(years) {
-      if (dataset.get('hasYears')) {
-        let keys = years.rows.mapBy(yearcolumn).sort();
-        let obj = keys.map((el) => { return Ember.Object.create({ year: el, selected: true }); });
-        return obj;
-      } else {
-        return Ember.A([]);
-      }
     }).catch(handleErrors);
 
     return RSVP.hash({
       dataset,
       raw_data,
-      metadata,
-      years_available
     });
   },
 

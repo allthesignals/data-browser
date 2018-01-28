@@ -3,6 +3,7 @@ import config from '../config/environment';
 import Loader from '../utils/loader';
 import RSVP from 'rsvp';
 
+const { dataBrowserIndex } = config;
 const MAX_DATASETS = 300;
 
 const { Promise } = RSVP;
@@ -27,20 +28,25 @@ const Dataset = Ember.Object.extend({
 });
 
 export default Ember.Route.extend({
-  metadata: Ember.inject.service(),
-  model() {
-    Loader.loadScript(`https://nycplanning-web.carto.com/u/planninglabs/api/v1/viz/?page=1&type=table&exclude_shared=false&per_page=${MAX_DATASETS}&locked=&tags=&shared=yes&only_liked=false&order=updated_at&exclude_raster=true&callback=vizjson&show_stats=false&show_permission=false&show_table=false&show_likes=false`);
+  model({endpoint}) {
+    let url = `${dataBrowserIndex}/api/v1/viz/?page=1&type=table&exclude_shared=false&per_page=${MAX_DATASETS}&locked=&tags=&shared=yes&only_liked=false&order=updated_at&exclude_raster=true&callback=vizjson&show_stats=false&show_permission=false&show_table=false&show_likes=false`;
+    if (endpoint) {
+      url = `${endpoint}/api/v1/viz/?page=1&type=table&exclude_shared=false&per_page=${MAX_DATASETS}&locked=&tags=&shared=yes&only_liked=false&order=updated_at&exclude_raster=true&callback=vizjson&show_stats=false&show_permission=false&show_table=false&show_likes=false`;
+    }
+
+    Loader.loadScript(url);
 
     let promise = new Promise(function(resolve, reject) {
       // on success
       window.vizjson = (data) => {
         const { visualizations } = data;
 
+        // rename properties
         visualizations.forEach(meta => {
-          const [tag1 = 'Uncategorized', tag2 = 'Uncategorized', tag3 = 'Uncategorized'] = meta.tags;
-          meta.menu1 = tag1;
-          meta.menu2 = tag2;
-          meta.menu3 = meta.name;
+          const [tag1 = 'uncategorized', tag2 = 'uncategorized'] = meta.tags;
+          meta.menu1 = tag1.capitalize();
+          meta.menu2 = tag2.capitalize();
+          meta.menu3 = meta.name.replace(/_/g, ' ').capitalize();
           meta.table_name = meta.name;
         });
 

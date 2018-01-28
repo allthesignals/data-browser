@@ -1,8 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  metadata: Ember.inject.service(),
-  queryParams: ['selectedCategory'],
+  queryParams: ['selectedCategory', 'endpoint'],
   selectedCategory: null,
   primaryCount: 0,
   searchables: Ember.computed('model', function() {
