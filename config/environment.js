@@ -53,6 +53,8 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.locationType = 'hash';
     ENV.rootURL = '/data-browser/';
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/data-browser/';
 
   }
 
