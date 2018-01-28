@@ -1,0 +1,1424 @@
+[
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Age",
+     "menu3":"Median Age (Block Groups)",
+     "table_name":"b01002_med_age_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Disability Status by Age and Gender (Census Tracts)",
+     "table_name":"b18101_disability_by_gender_age_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Disability Status by Age and Gender (Municipal)",
+     "table_name":"b18101_disability_by_gender_age_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Disability Status by Difficulty Type (Census Tracts)",
+     "table_name":"b18101_thru_b18107_disability_status_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Disability Status by Difficulty Type (Municipal)",
+     "table_name":"b18101_thru_b18107_disability_status_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Employment Status by Disability Status (Census Tracts)",
+     "table_name":"c18120_emp_status_by_disability_status_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Employment Status by Disability Status (Municipal)",
+     "table_name":"c18120_emp_status_by_disability_status_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Health Insurance Coverage by Disability Status (Census Tracts)",
+     "table_name":"b18135_health_insurance_by_disability_status_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Health Insurance Coverage by Disability Status (Municipal)",
+     "table_name":"b18135_health_insurance_by_disability_status_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Hearing Disability Status by Age (Municipal)",
+     "table_name":"b18102_hearing_difficulty_by_age_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Median Earnings by Disability Status (Municipal)",
+     "table_name":"b18140_median_earning_by_disability_status_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Poverty Status by Disability Status (Census Tracts)",
+     "table_name":"c18130_poverty_status_by_disability_status_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Poverty Status by Disability Status (Municipal)",
+     "table_name":"c18130_poverty_status_by_disability_status_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Disability Status",
+     "menu3":"Vision Disability Status by Age (Municipal)",
+     "table_name":"b18103_vision_difficulty_by_age_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Environmental Justice",
+     "menu3":"Environmental Justice 2010 Summary Statistics",
+     "table_name":"demo_ej2010_stats_m",
+     "yearcolumn":"years",
+     "source":"Census; ACS"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Geographic Mobility",
+     "menu3":"Geographic Mobility: Inbound Migration (Census Tracts)",
+     "table_name":"b07204_geomobility_in_migration_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Geographic Mobility",
+     "menu3":"Geographic Mobility: Inbound Migration (Municipal)",
+     "table_name":"b07204_geomobility_in_migration_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Geographic Mobility",
+     "menu3":"Geographic Mobility: Outbound Migration (Municipal)",
+     "table_name":"b07403_geomobility_out_migration_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Language",
+     "menu3":"Language Spoken at Home with Ability to Speak English  (Block Groups)",
+     "table_name":"b16004_home_language_english_ability_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Language",
+     "menu3":"Language Spoken at Home with Ability to Speak English  (Census Tracts)",
+     "table_name":"b16004_home_language_english_ability_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Language",
+     "menu3":"Language Spoken at Home with Ability to Speak English  (Municipal)",
+     "table_name":"b16004_home_language_english_ability_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Linguistic Isolation",
+     "menu3":"Households with Linguistic Isolation (Block Groups)",
+     "table_name":"b16002_hh_linguistic_isolation_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Linguistic Isolation",
+     "menu3":"Households with Linguistic Isolation (Census Tracts)",
+     "table_name":"b16002_hh_linguistic_isolation_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Linguistic Isolation",
+     "menu3":"Households with Linguistic Isolation (Municipal)",
+     "table_name":"b16002_hh_linguistic_isolation_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Population",
+     "menu3":"Minority Population 2000-2010 (Municipal)",
+     "table_name":"demo_population_minorities_00_10_m",
+     "yearcolumn":"",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Population",
+     "menu3":"Population 1990-2010 (Municipal)",
+     "table_name":"demo_population_by_decade_m",
+     "yearcolumn":"",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Population",
+     "menu3":"Population Estimates (Municipal)",
+     "table_name":"demo_pop_estimates_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Population by Race (Block Groups)",
+     "table_name":"census2010_p3_race_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Population by Race (Census Tracts)",
+     "table_name":"census2010_p3_race_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Population by Race (Municipal)",
+     "table_name":"census2010_p3_race_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Population by Race and Ethnicity (Block Groups)",
+     "table_name":"census2010_p5_race_ethnicity_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Population by Race and Ethnicity (Blocks)",
+     "table_name":"census2010_p5_race_ethnicity_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Population by Race and Ethnicity (Census Tracts)",
+     "table_name":"census2010_p5_race_ethnicity_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Population by Race and Ethnicity (Municipal)",
+     "table_name":"census2010_p5_race_ethnicity_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Race and Ethnicity Estimates (Block Groups)",
+     "table_name":"b03002_race_ethnicity_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Race and Ethnicity Estimates (Census Tracts)",
+     "table_name":"b03002_race_ethnicity_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Race and Ethnicity Estimates (Municipal)",
+     "table_name":"b03002_race_ethnicity_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Race/Ethnicity 2000-2010 with Change (Municipal)",
+     "table_name":"demo_pop_race_00_10m",
+     "yearcolumn":"",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Grouped)",
+     "menu3":"Race/Ethnicity by Decade (Census Tracts) **READ MOU**",
+     "table_name":"demo_race_by_decade_ct",
+     "yearcolumn":"years",
+     "source":"Geolytics"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"American Indian (Non-Hispanic or Latino) Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_pct12k_nh_na_race_by_gender_age_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"American Indian (Non-Hispanic or Latino) Population by Age and Gender (Municipal)",
+     "table_name":"census2010_pct12k_nh_na_race_by_gender_age_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"American Indian Population by Age and Gender (Block Groups)",
+     "table_name":"census2010_p12c_na_race_by_age_gender_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"American Indian Population by Age and Gender (Blocks)",
+     "table_name":"census2010_p12c_na_race_by_age_gender_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"American Indian Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_p12c_na_race_by_age_gender_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"American Indian Population by Age and Gender (Municipal)",
+     "table_name":"census2010_p12c_na_race_by_age_gender_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Asian (Non-Hispanic or Latino) Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_pct12l_nh_asian_race_by_gender_age_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Asian (Non-Hispanic or Latino) Population by Age and Gender (Municipal)",
+     "table_name":"census2010_pct12l_nh_asian_race_by_gender_age_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Asian Population by Age and Gender (Block Groups)",
+     "table_name":"census2010_p12d_asian_race_by_age_gender_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Asian Population by Age and Gender (Blocks)",
+     "table_name":"census2010_p12d_asian_race_by_age_gender_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Asian Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_p12d_asian_race_by_age_gender_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Asian Population by Age and Gender (Municipal)",
+     "table_name":"census2010_p12d_asian_race_by_age_gender_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Black (Non-Hispanic or Latino) Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_pct12j_nh_black_race_by_gender_age_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Black (Non-Hispanic or Latino) Population by Age and Gender (Municipal)",
+     "table_name":"census2010_pct12j_nh_black_race_by_gender_age_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Black Population by Age and Gender (Block Groups)",
+     "table_name":"census2010_p12b_black_race_by_age_gender_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Black Population by Age and Gender (Blocks)",
+     "table_name":"census2010_p12b_black_race_by_age_gender_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Black Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_p12b_black_race_by_age_gender_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Black Population by Age and Gender (Municipal)",
+     "table_name":"census2010_p12b_black_race_by_age_gender_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Hispanic or Latino Population by Age and Gender (Block Groups)",
+     "table_name":"census2010_p12h_hisp_race_by_age_gender_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Hispanic or Latino Population by Age and Gender (Blocks)",
+     "table_name":"census2010_p12h_hisp_race_by_age_gender_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Hispanic or Latino Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_p12h_hisp_race_by_age_gender_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Hispanic or Latino Population by Age and Gender (Municipal)",
+     "table_name":"census2010_p12h_hisp_race_by_age_gender_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Multi-Race (Non-Hispanic or Latino) Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_pct12o_nh_multi_race_by_gender_age_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Multi-Race (Non-Hispanic or Latino) Population by Age and Gender (Municipal)",
+     "table_name":"census2010_pct12o_nh_multi_race_by_gender_age_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Multi-Race Population by Age and Gender (Block Groups)",
+     "table_name":"census2010_p12g_multi_race_by_age_gender_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Multi-Race Population by Age and Gender (Blocks)",
+     "table_name":"census2010_p12g_multi_race_by_age_gender_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Multi-Race Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_p12g_multi_race_by_age_gender_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Multi-Race Population by Age and Gender (Municipal)",
+     "table_name":"census2010_p12g_multi_race_by_age_gender_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Pacific Islander (Non-Hispanic or Latino) Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_pct12m_nhpi_race_by_gender_age_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Pacific Islander (Non-Hispanic or Latino) Population by Age and Gender (Municipal)",
+     "table_name":"census2010_pct12m_nhpi_race_by_gender_age_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Pacific Islander Population by Age and Gender (Block Groups)",
+     "table_name":"census2010_p12e_pi_race_by_age_gender_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Pacific Islander Population by Age and Gender (Blocks)",
+     "table_name":"census2010_p12e_pi_race_by_age_gender_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Pacific Islander Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_p12e_pi_race_by_age_gender_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Pacific Islander Population by Age and Gender (Municipal)",
+     "table_name":"census2010_p12e_pi_race_by_age_gender_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Some Other Race (Non-Hispanic or Latino) Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_pct12n_nhoth_race_by_gender_age_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Some Other Race (Non-Hispanic or Latino) Population by Age and Gender (Municipal)",
+     "table_name":"census2010_pct12n_nhoth_race_by_gender_age_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Some Other Race alone Population by Age and Gender (Block Groups)",
+     "table_name":"census2010_p12f_other_race_by_age_gender_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Some Other Race alone Population by Age and Gender (Blocks)",
+     "table_name":"census2010_p12f_other_race_by_age_gender_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Some Other Race Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_p12f_other_race_by_age_gender_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"Some Other Race Population by Age and Gender (Municipal)",
+     "table_name":"census2010_p12f_other_race_by_age_gender_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"White alone (Non-Hispanic or Latino) Population by Age and Gender (Block Groups)",
+     "table_name":"census2010_p12i_nhwhi_race_by_age_gender_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"White alone (Non-Hispanic or Latino) Population by Age and Gender (Blocks)",
+     "table_name":"census2010_p12i_nhwhi_race_by_age_gender_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"White alone (Non-Hispanic or Latino) Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_p12i_nhwhi_race_by_age_gender_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"White alone (Non-Hispanic or Latino) Population by Age and Gender (Municipal)",
+     "table_name":"census2010_p12i_nhwhi_race_by_age_gender_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"White Population by Age and Gender (Block Groups)",
+     "table_name":"census2010_p12a_whi_race_by_age_gender_bg",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"White Population by Age and Gender (Blocks)",
+     "table_name":"census2010_p12a_whi_race_by_age_gender_b",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"White Population by Age and Gender (Census Tracts)",
+     "table_name":"census2010_p12a_whi_race_by_age_gender_ct",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":2,
+     "menu1":"Demographics",
+     "menu2":"Race (Individual Race)",
+     "menu3":"White Population by Age and Gender (Municipal)",
+     "table_name":"census2010_p12a_whi_race_by_age_gender_m",
+     "yearcolumn":"years",
+     "source":"Census"
+  },
+  {
+     "themeid":3,
+     "menu1":"Economy",
+     "menu2":"Affordable Income",
+     "menu3":"HUD Income Limits (Municipal)",
+     "table_name":"hous_section8_income_limits_by_year_m",
+     "yearcolumn":"fy_year",
+     "source":"HUD"
+  },
+  {
+     "themeid":3,
+     "menu1":"Economy",
+     "menu2":"Census Businesses",
+     "menu3":"Businesses by NAICS Code and Employment Size (MSA)",
+     "table_name":"econ_census_businesses_by_year_msa",
+     "yearcolumn":"cal_year",
+     "source":"Census Statistics of U.S. Businesses (SUSB) "
+  },
+  {
+     "themeid":3,
+     "menu1":"Economy",
+     "menu2":"Consumer Price Index Annual Average",
+     "menu3":"Consumer Price Index Annual Average (MetroBoston MSA)",
+     "table_name":"econ_consumer_price_index_boston_msa_avg",
+     "yearcolumn":"",
+     "source":"BLS"
+  },
+  {
+     "themeid":3,
+     "menu1":"Economy",
+     "menu2":"Consumer Price Index Annual Average",
+     "menu3":"Consumer Price Index Annual Average (US)",
+     "table_name":"econ_consumer_price_index_usa_avg",
+     "yearcolumn":"",
+     "source":"BLS"
+  },
+  {
+     "themeid":3,
+     "menu1":"Economy",
+     "menu2":"Employment (ACS)",
+     "menu3":"Labor Force (Block Groups)",
+     "table_name":"b23025_employment_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":3,
+     "menu1":"Economy",
+     "menu2":"Employment (ACS)",
+     "menu3":"Labor Force (Census Tracts)",
+     "table_name":"b23025_employment_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Educational Attainment",
+     "menu3":"Educational Attainment by Age (Municipal)",
+     "table_name":"b15001_educational_attainment_by_age_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Educational Attainment",
+     "menu3":"Educational Attainment by Labor Force (Census Tracts)",
+     "table_name":"b23006_educational_attainment_by_laborforce_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Educational Attainment",
+     "menu3":"Educational Attainment by Labor Force (Municipal)",
+     "table_name":"b23006_educational_attainment_by_laborforce_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Educational Attainment",
+     "menu3":"Educational Attainment by Place of Birth (Census Tracts)",
+     "table_name":"b06009_educational_attainment_by_placeofbirth_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Educational Attainment",
+     "menu3":"Educational Attainment by Place of Birth (Municipal)",
+     "table_name":"b06009_educational_attainment_by_placeofbirth_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Educational Attainment",
+     "menu3":"Educational Attainment by Race (Census Tracts)",
+     "table_name":"c15002_educational_attainment_by_race_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Educational Attainment",
+     "menu3":"Educational Attainment by Race (Municipal)",
+     "table_name":"c15002_educational_attainment_by_race_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Enrollment",
+     "menu3":"Enrollment by School Year (School Districts)",
+     "table_name":"educ_enrollment_by_year_districts",
+     "yearcolumn":"schoolyear",
+     "source":"MA DESE"
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Enrollment",
+     "menu3":"Enrollment by School Year (Schools)",
+     "table_name":"educ_enrollment_by_year_schools",
+     "yearcolumn":"schoolyear",
+     "source":"MA DESE"
+  },
+  {
+     "themeid":5,
+     "menu1":"Education",
+     "menu2":"Graduation",
+     "menu3":"Graduation Rates (School Districts)",
+     "table_name":"educ_graduation_rate_by_year_districts",
+     "yearcolumn":"schoolyear",
+     "source":"MA DESE"
+  },
+  {
+     "themeid":5,
+     "menu1":"Education",
+     "menu2":"MCAS",
+     "menu3":"MCAS Grade 10 ELA Proficiency (School Districts)",
+     "table_name":"educ_mcas_gr10_ela_by_year_districts",
+     "yearcolumn":"schoolyear",
+     "source":"MA DESE"
+  },
+  {
+     "themeid":5,
+     "menu1":"Education",
+     "menu2":"MCAS",
+     "menu3":"MCAS Grade 10 Math Proficiency (School Districts)",
+     "table_name":"educ_mcas_gr10_math_by_year_districts",
+     "yearcolumn":"schoolyear",
+     "source":"MA DESE"
+  },
+  {
+     "themeid":5,
+     "menu1":"Education",
+     "menu2":"MCAS",
+     "menu3":"MCAS Grade 3 ELA Proficiency (School Districts)",
+     "table_name":"educ_mcas_gr3_ela_by_year_districts",
+     "yearcolumn":"schoolyear",
+     "source":"MA DESE"
+  },
+  {
+     "themeid":5,
+     "menu1":"Education",
+     "menu2":"MCAS",
+     "menu3":"MCAS Grade 3 Math Proficiency (School Districts)",
+     "table_name":"educ_mcas_gr3_math_by_year_districts",
+     "yearcolumn":"schoolyear",
+     "source":"MA DESE"
+  },
+  {
+     "themeid":4,
+     "menu1":"Education",
+     "menu2":"Plans after Graduation",
+     "menu3":"Plans after Graduation (School Districts)",
+     "table_name":"educ_post_grad_plans_by_year_districts",
+     "yearcolumn":"schoolyear",
+     "source":"MA DESE"
+  },
+  {
+     "themeid":13,
+     "menu1":"Environment and Energy",
+     "menu2":"Temperature",
+     "menu3":"Logan Daily Temperature Data",
+     "table_name":"env_noaa_boston_daily_temp",
+     "yearcolumn":"year",
+     "source":"NOAA"
+  },
+  {
+     "themeid":13,
+     "menu1":"Environment and Energy",
+     "menu2":"Water Use",
+     "menu3":"Annual Average Residential Water Use (Municipal)",
+     "table_name":"env_dep_reviewed_water_demand_m",
+     "yearcolumn":"",
+     "source":"MassDEP"
+  },
+  {
+     "themeid":6,
+     "menu1":"Housing",
+     "menu2":"Affordability",
+     "menu3":"HUD Income Limits (Municipal)",
+     "table_name":"hous_section8_income_limits_by_year_m",
+     "yearcolumn":"fy_year",
+     "source":"HUD"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Cost Burden",
+     "menu3":"Cost Burdened Households by Race (Municipal)",
+     "table_name":"hous_hh_race_by_cb_chas_m",
+     "yearcolumn":"acs_year",
+     "source":"CHAS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Cost Burden",
+     "menu3":"Cost Burdened Rented Households by Income (Block Groups)",
+     "table_name":"b25074_costburden_renters_by_income_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Cost Burden",
+     "menu3":"Cost Burdened Rented Households by Income (Census Tracts)",
+     "table_name":"b25074_costburden_renters_by_income_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Cost Burden",
+     "menu3":"Cost Burdened Rented Households by Income (Municipal)",
+     "table_name":"b25074_costburden_renters_by_income_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Cost Burden",
+     "menu3":"Household Income Type by Cost Burden Status (Census Tracts)",
+     "table_name":"hous_hh_income_by_cb_chas_ct",
+     "yearcolumn":"acs_year",
+     "source":"CHAS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Cost Burden",
+     "menu3":"Household Income Type by Cost Burden Status (Municipal)",
+     "table_name":"hous_hh_income_by_cb_chas_m",
+     "yearcolumn":"acs_year",
+     "source":"CHAS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Cost Burden",
+     "menu3":"Household Type by Cost Burden Status (Census Tracts)",
+     "table_name":"hous_hh_type_by_cb_chas_ct",
+     "yearcolumn":"acs_year",
+     "source":"CHAS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Cost Burden",
+     "menu3":"Household Type by Cost Burden Status (Municipal)",
+     "table_name":"hous_hh_type_by_cb_chas_m",
+     "yearcolumn":"acs_year",
+     "source":"CHAS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Cost Burden",
+     "menu3":"Owner Households by Income and Cost Burden (Census Tract Parts)",
+     "table_name":"hous_owner_income_by_cb_chas_ct",
+     "yearcolumn":"acs_year",
+     "source":"CHAS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Household Income by Race (Census Tracts)",
+     "table_name":"b19001_hh_income_race_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Household Income by Race (MSA)",
+     "table_name":"b19001_hh_income_race_acs_msa",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Household Income by Race (Municipal)",
+     "table_name":"b19001_hh_income_race_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Household Income by Race and Age (Census Tracts)",
+     "table_name":"b19037_hh_income_by_age_race_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Household Income by Race and Age (Municipal)",
+     "table_name":"b19037_hh_income_by_age_race_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Household Income by Tenure  (Census Tracts)",
+     "table_name":"hous_hh_ami_tenure_chas_ct",
+     "yearcolumn":"acs_year",
+     "source":"CHAS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Household Income by Tenure  (Municipal)",
+     "table_name":"hous_hh_ami_tenure_chas_m",
+     "yearcolumn":"acs_year",
+     "source":"CHAS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Median Household Income by Family Type (Block Groups)",
+     "table_name":"b19013_b19113_b19202_mhi_fam_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Median Household Income by Family Type (Census Tracts)",
+     "table_name":"b19013_b19113_b19202_mhi_fam_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Median Household Income by Family Type (Municipal)",
+     "table_name":"b19013_b19113_b19202_mhi_fam_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Median Household Income by Race (Block Groups)",
+     "table_name":"b19013_mhi_race_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Median Household Income by Race (Census Tracts)",
+     "table_name":"b19013_mhi_race_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Median Household Income by Race (MSA)",
+     "table_name":"b19013_mhi_race_acs_msa",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Median Household Income by Race (Municipal)",
+     "table_name":"b19013_mhi_race_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Median Household Income by Tenure (Census Tracts)",
+     "table_name":"b25119_mhi_tenure_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Income",
+     "menu3":"Median Household Income by Tenure (Municipal)",
+     "table_name":"b25119_mhi_tenure_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Household Tenure",
+     "menu3":"Household Tenure by Age (Block Groups)",
+     "table_name":"b25007_hh_tenure_by_age_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Sales and Rent",
+     "menu3":"Median Rent by Number of Bedrooms (Census Tracts)",
+     "table_name":"b25031_median_rent_by_bedrooms_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Sales and Rent",
+     "menu3":"Median Rent by Number of Bedrooms (Municipal)",
+     "table_name":"b25031_median_rent_by_bedrooms_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":6,
+     "menu1":"Housing",
+     "menu2":"Supply",
+     "menu3":"Building Permits by Year (Municipal)",
+     "table_name":"hous_building_permits_m",
+     "yearcolumn":"cal_year",
+     "source":"Census Building Permit Survey"
+  },
+  {
+     "themeid":6,
+     "menu1":"Housing",
+     "menu2":"Supply",
+     "menu3":"Housing Units in a a Structure (Municipal)",
+     "table_name":"b25024_hu_units_in_structure_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS"
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Supply",
+     "menu3":"Housing Units in a Structure (Block Groups)",
+     "table_name":"b25024_hu_units_in_structure_acs_bg",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Supply",
+     "menu3":"Housing Units in a Structure (Census Tracts)",
+     "table_name":"b25024_hu_units_in_structure_acs_ct",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Supply",
+     "menu3":"Housing Units in a Structure (Municipal)",
+     "table_name":"b25024_hu_units_in_structure_acs_m",
+     "yearcolumn":"acs_year",
+     "source":"ACS "
+  },
+  {
+     "themeid":5,
+     "menu1":"Housing",
+     "menu2":"Supply",
+     "menu3":"Housing Units, 1990-2010 (Municipal)",
+     "table_name":"hous_housing_units_90_10_m",
+     "yearcolumn":"",
+     "source":"Census"
+  },
+  {
+     "themeid":13,
+     "menu1":"Environment and Energy",
+     "menu2":"Energy",
+     "menu3":"Manufacturing Energy Consumption Ratios (United States)",
+     "table_name":"energy_mecs_consumption_ratios_us_us",
+     "yearcolumn":"years",
+     "source":"US Energy Information Administration: MECS Survey"
+  },
+  {
+     "themeid":13,
+     "menu1":"Environment and Energy",
+     "menu2":"Energy",
+     "menu3":"Commercial Natural Gas Consumption and Expenditure (United States)",
+     "table_name":"energy_cbecs_natgas_consumption_expenditure_us",
+     "yearcolumn":"years",
+     "source":"US Energy Information Administration: CBECS Survey"
+  },
+  {
+     "themeid":13,
+     "menu1":"Environment and Energy",
+     "menu2":"Energy",
+     "menu3":"Manufacturing End Use Consumption (United States)",
+     "table_name":"energy_mecs_end_use_consumption_us",
+     "yearcolumn":"years",
+     "source":"US Energy Information Administration: MECS Survey"
+  },
+  {
+     "themeid":13,
+     "menu1":"Environment and Energy",
+     "menu2":"Energy",
+     "menu3":"Manufacturing Fuel Consumption (United States)",
+     "table_name":"energy_mecs_fuel_consumption_ne_us",
+     "yearcolumn":"years",
+     "source":"US Energy Information Administration: MECS Survey"
+  },
+  {
+     "themeid":13,
+     "menu1":"Environment and Energy",
+     "menu2":"Energy",
+     "menu3":"Residential Fuel Consumption  (United States)",
+     "table_name":"energy_recs_hh_fuel_consumption_ne_us",
+     "yearcolumn":"years",
+     "source":"US Energy Information Administration: RECS Survey"
+  },
+  {
+     "themeid":12,
+     "menu1":"Land Use",
+     "menu2":"Parcels (Level 3)",
+     "menu3":"Status of Parcels (Level 3) by Fiscal Year",
+     "table_name":"boun_parcel_status_m",
+     "yearcolumn":"",
+     "source":"MassGIS"
+  },
+  {
+     "themeid":7,
+     "menu1":"Projections",
+     "menu2":"Households",
+     "menu3":"Households by Householder Age with Projections 2010-2030 (Municipal)",
+     "table_name":"hous_projections_hh_by_age_m",
+     "yearcolumn":"",
+     "source":"Census, MAPC"
+  },
+  {
+     "themeid":7,
+     "menu1":"Projections",
+     "menu2":"Households",
+     "menu3":"Households with Projections 1990-2040 (MetroFuture)",
+     "table_name":"hous_projections_hh_m",
+     "yearcolumn":"",
+     "source":"Census, MAPC"
+  },
+  {
+     "themeid":7,
+     "menu1":"Projections",
+     "menu2":"Households",
+     "menu3":"Housing Unit Demand by Age Group (Municipal)",
+     "table_name":"hous_projections_hu_demand_by_age_m",
+     "yearcolumn":"",
+     "source":""
+  },
+  {
+     "themeid":7,
+     "menu1":"Projections",
+     "menu2":"Population",
+     "menu3":"Median Age with Projections 2010-2030 (Municipal)",
+     "table_name":"demo_projections_median_age_m",
+     "yearcolumn":"",
+     "source":"Census, MAPC"
+  },
+  {
+     "themeid":7,
+     "menu1":"Projections",
+     "menu2":"Population",
+     "menu3":"Population 0 - 14 years with Projections 1990-2030 (Municipal)",
+     "table_name":"demo_projections_pop_ages_00_14_m",
+     "yearcolumn":"",
+     "source":"Census, MAPC"
+  },
+  {
+     "themeid":7,
+     "menu1":"Projections",
+     "menu2":"Population",
+     "menu3":"Population 05 - 14 years with Projections 1990-2030 (Municipal)",
+     "table_name":"demo_projections_pop_ages_5_14_m",
+     "yearcolumn":"",
+     "source":"Census, MAPC"
+  },
+  {
+     "themeid":7,
+     "menu1":"Projections",
+     "menu2":"Population",
+     "menu3":"Population 15 - 19 years with Projections 1990-2030 (Municipal)",
+     "table_name":"demo_projections_pop_ages_15_19_m",
+     "yearcolumn":"",
+     "source":"Census, MAPC"
+  }
+]
