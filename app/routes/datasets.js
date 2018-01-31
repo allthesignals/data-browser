@@ -6,12 +6,15 @@ import imputeSpatiality from '../utils/impute-spatiality';
 
 export default Ember.Route.extend({
   ajax: Ember.inject.service(),
-  model(params) {
+  model(params, { queryParams: { endpoint } }) {
     let dataset = this.modelFor('application').findBy('id', params.dataset_id);
     let yearcolumn = dataset.get('yearcolumn');
-
+    console.log(endpoint);
     // SQL queries
     let url = `${config.dataBrowserEndpoint}select * from ${dataset.get('table_name')} `;
+    if (endpoint) {
+      url = `${endpoint}api/v2/sql?q=select * from ${dataset.get('table_name')} `;
+    }
 
     if (dataset.get('isMunicipal') && dataset.get('hasYears')) {
       url += `where ${yearcolumn}=(select max(${yearcolumn}) from ${dataset.get('table_name')}) order by municipal ASC;`;
