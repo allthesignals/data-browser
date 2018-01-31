@@ -13,7 +13,7 @@ export default Ember.Route.extend({
     // SQL queries
     let url = `${config.dataBrowserEndpoint}select * from ${dataset.get('table_name')} `;
     if (endpoint) {
-      url = `${endpoint}api/v2/sql?q=select * from ${dataset.get('table_name')} `;
+      url = `${endpoint}/api/v2/sql?q=select * from ${dataset.get('table_name')} `;
     }
 
     if (dataset.get('isMunicipal') && dataset.get('hasYears')) {
