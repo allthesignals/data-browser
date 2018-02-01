@@ -12,9 +12,15 @@ body {
   color: black !important;
 }
 
-// .ui.grid>.column+.divider, .ui.grid>.row>.column+.divider {
-//     left: 50%;
-// }
+h3.ui.dividing.header {
+  font-family: 'Montserrat'  sans-serif;
+  font-weight: 300;
+}
+
+.header {
+  font-family: 'Montserrat'  sans-serif;
+  font-weight: 400;
+}
 
 .divider-column {
   position: relative;
