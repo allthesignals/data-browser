@@ -1,15 +1,47 @@
-<div class='ui container'>
-  <div class="ui four column stackable grid">
-    <div class="four wide column">
-      <div class="ui basic segment scrollable-menus">
-        <h3 class="ui dividing header">
-          Topics
-        </h3>
-        {{#liquid-bind model use='toUp'}}
-          {{menus-component model=model}}
-        {{/liquid-bind}}
+<div class="main-content-offset">
+  <div class="ui stackable grid main-content">
+    <div class="seven wide column tags">
+      <div class="ui grid categories-split">
+        <div class="row categories-split-top">
+          <div class="ui equal width grid">
+            <div class="column">
+              <div class="ui basic segment scrollable-menus">
+                <h3 class="ui dividing header tags-header">
+                  Categories
+                </h3>
+                {{#liquid-bind model use='toUp'}}
+                  {{menus-component model=model}}
+                {{/liquid-bind}}
+              </div>
+            </div>
+            {{outlet}}
+          </div>
+        </div>
+        <div class="row categories-split-bottom">
+        </div>
       </div>
     </div>
-    {{outlet}}
+    <div class="nine wide column">
+      <div class="eight wide column">
+        {{#liquid-bind model use='toUp'}}
+          <div class="ui raised segment scrollable-menus">
+            <h4 class="ui dividing header">
+              {{model.firstObject.menu2}}
+            </h4>
+            <div class="ui selection list">
+              {{#each model as |dataSet|}}
+                {{#link-to 'datasets' dataSet.id class='item'}}
+                  <div class="content">
+                    <div class="header">{{dataSet.menu3}}</div>
+                    <div class="description">{{category.values.length}} datasets</div>
+                  </div>
+                {{/link-to}}
+              {{/each}}
+            </div>  
+          </div>
+        {{/liquid-bind}}
+        {{outlet}}
+      </div>
+    </div>
   </div>
 </div>

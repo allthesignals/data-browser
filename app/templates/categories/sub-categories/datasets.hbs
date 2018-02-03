@@ -9,18 +9,16 @@
       <h4 class="ui dividing header">
         {{model.firstObject.menu2}}
       </h4>
-
-        <div class="ui selection list">
-          {{#each model as |dataSet|}}
-            {{!-- <a class="item" href={{concat dataSet.dataBrowserEndpoint 'select * from ' dataSet.table_name '&format=csv' }} target="_blank"> --}}
-            {{#link-to 'datasets' dataSet.id class='item'}}
-              <div class="content">
-                <div class="header">{{dataSet.menu3}}</div>
-                <div class="description">{{category.values.length}} datasets</div>
-              </div>
-            {{/link-to}}
-          {{/each}}
-        </div>  
+      <div class="ui selection list">
+        {{#each model as |dataSet|}}
+          {{#link-to 'datasets' dataSet.id class='item'}}
+            <div class="content">
+              <div class="header">{{dataSet.menu3}}</div>
+              <div class="description">{{category.values.length}} datasets</div>
+            </div>
+          {{/link-to}}
+        {{/each}}
+      </div>  
     </div>
   {{/liquid-bind}}
   {{outlet}}

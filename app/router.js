@@ -9,12 +9,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('categories', { path: '/' }, function() {
     this.route('sub-categories', { path: '/:id' }, function() {
-      this.route('datasets', { path: '/:parentcategory_id' }, function() {
-        this.route('dataset', { path: '/:dataset_id' });
-      });
+      this.route('datasets', { path: '/:parentcategory_id' }, function() {});
     });
   });
-  this.route('expandable-grid', { path: '/expandable-grid' });
   this.route('datasets', { path: 'datasets/:dataset_id' });
 });
 

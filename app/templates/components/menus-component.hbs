@@ -1,5 +1,5 @@
 {{#each primary as |category|}}
-  {{#link-to subRoute category.key tagName='div' class='item'}}
+  {{#link-to subRoute category.key tagName='div' class='item tag-filter'}}
     <div class="content">
       <div class="header">{{category.key}}</div>
       <div class="description">{{category.values.length}} datasets</div>
