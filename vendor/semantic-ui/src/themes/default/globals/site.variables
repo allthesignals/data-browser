@@ -57,12 +57,12 @@
   Page Heading
 ---------------*/
 
-@headerFontWeight : bold;
+@headerFontWeight : normal;
 @headerLineHeight : unit((18 / 14), em);
 
-@h1 : unit((28 / 14), rem);
-@h2 : unit((24 / 14), rem);
-@h3 : unit((18 / 14), rem);
+@h1 : unit((30 / 14), rem);
+@h2 : unit((26 / 14), rem);
+@h3 : unit((24 / 14), rem);
 @h4 : unit((15 / 14), rem);
 @h5 : unit((14 / 14), rem);
 
@@ -222,7 +222,7 @@
 @olive            : #B5CC18;
 @green            : #21BA45;
 @teal             : #00B5AD;
-@blue             : #2185D0;
+@blue             : #397cd3;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;
@@ -237,7 +237,7 @@
 @lightOlive       : #D9E778;
 @lightGreen       : #2ECC40;
 @lightTeal        : #6DFFFF;
-@lightBlue        : #54C8FF;
+@lightBlue        : #6ca1e7;
 @lightViolet      : #A291FB;
 @lightPurple      : #DC73FF;
 @lightPink        : #FF8EDF;

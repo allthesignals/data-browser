@@ -1,15 +1,70 @@
 @import "ember-searchable-select/style";
 
+.dark-blue {
+  color: rgb(47, 96, 207)
+}
+
+.light-blue {
+  color: rgb(91, 137, 230);
+}
+
 body {
   background-color: #fafafa;
   color: #212121;
 }
 
-.scrollable-menus {
+body > .ember-view {
+  height: 100%;
+}
+
+.tags-header.ui.header {
+  color: rgb(91, 137, 230);
+}
+
+.main-content-offset {
+  margin-top: 80px;
+  height: 100%;
+}
+
+.main-content {
+  height: 100%;
+}
+
+.categories-split {
+  height: 100%;
+}
+
+.categories-split-bottom {
+  height:100%; 
+  width:100%; 
+  background-color: rgb(57, 124, 211);
+}
+
+.tags {
+  background-color: white;
+  height: 100%;
+}
+
+.tags .tag-filter .header {
+  text-transform: uppercase;
+}
+
+.categories-split-top {
+  margin-left: 1.5rem;
+}
+
+.ui.menu .item.logo {
+  text-transform: uppercase; 
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 .Searchable-select {
   color: black !important;
+}
+
+.Searchable-select__label {
+  border-radius: 0px;
 }
 
 h3.ui.dividing.header {
