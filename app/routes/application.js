@@ -5,6 +5,7 @@ import RSVP from 'rsvp';
 
 const { dataBrowserIndex } = config;
 const MAX_DATASETS = 300;
+const TAG_META_SEPARATOR = ':';
 
 const { Promise } = RSVP;
 const Dataset = Ember.Object.extend({
@@ -18,6 +19,14 @@ const Dataset = Ember.Object.extend({
   yearcolumn: '',
   source: '',
   description: '',
+  tags: [],
+  tagsValues: Ember.computed('tags.[]', function() {
+    return this.get('tags').map(tag => {
+      const split = tag.split(TAG_META_SEPARATOR);
+      const { length } = split;
+      return split.objectAt(length - 1);
+    });
+  }),
   hasYears: Ember.computed('yearcolumn', function() {
     return !!this.get('yearcolumn');
   }),
@@ -40,24 +49,22 @@ export default Ember.Route.extend({
       // on success
       window.vizjson = (data) => {
         const { visualizations } = data;
-
-        // rename properties
-        visualizations.forEach(meta => {
-          const [tag1 = 'uncategorized', tag2 = 'uncategorized'] = meta.tags;
-          meta.menu1 = tag1.capitalize();
-          meta.menu2 = tag2.capitalize();
-          meta.menu3 = meta.name.replace(/_/g, ' ').capitalize();
-          meta.table_name = meta.name;
+        const datasets = visualizations.map(meta => {
+          return Dataset.create(meta);
         });
 
-        let wrappedViz = 
-          Ember.A(
-            visualizations.map(meta => {
-              return Dataset.create(meta);
-            }),
-          );
+        // rename properties
+        datasets.forEach(dataset => {
+          const [tag1 = 'uncategorized', tag2 = 'uncategorized'] = dataset.get('tagsValues');
+          dataset.set('menu1', tag1.capitalize());
+          dataset.set('menu2', tag2.capitalize());
+          dataset.set('menu3', dataset.name.replace(/_/g, ' ').capitalize());
+          dataset.set('table_name', dataset.name);
+        });
 
-        resolve(wrappedViz);
+        resolve(
+          Ember.A(datasets)
+        );
       };
     });
 

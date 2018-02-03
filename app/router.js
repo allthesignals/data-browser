@@ -9,7 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('categories', { path: '/' }, function() {
     this.route('sub-categories', { path: '/:id' }, function() {
-      this.route('datasets', { path: '/:parentcategory_id' }, function() {});
+      this.route('tertiary-categories', { path: '/:id2' });
     });
   });
   this.route('datasets', { path: 'datasets/:dataset_id' });

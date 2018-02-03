@@ -1,0 +1,30 @@
+<div class="eight wide column">
+  <div class="ui basic secondary link vertical menu segment scrollable-menus">
+    {{#each uniqueTags as |tag|}}
+      <div class="item tag-filter {{if tag.selected "active"}}" {{action 'toggleTag' tag}}>
+        <div class="content">
+          <div class="header">{{tag.key}}</div>
+          <div class="description">{{tag.count}} datasets</div>
+        </div>    
+      </div>
+    {{/each}}
+  </div>
+</div>
+<div class="eight wide column">
+  {{#if filteredTags}}
+    <div class="ui basic secondary link vertical menu segment scrollable-menus">
+      {{#each filteredTags as |tag|}}
+        <div class="item tag-filter {{if tag.selected "active"}}" {{action 'toggleTag' tag}}>
+          <div class="content">
+            <div class="header">{{tag.key}}</div>
+            <div class="description">{{tag.count}} datasets</div>
+          </div>    
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+</div>
+
+{{log uniqueTags filteredTags}}
+
+{{yield}}

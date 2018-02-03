@@ -1,15 +1,18 @@
 <div class="ui inverted fixed menu" style="background-color: #1976D2;">
-  {{#link-to 'application' class='item logo'}}
-    DCP Data Browser
-  {{/link-to}}
-  <div class="right menu">
-    {{searchable-select content=searchables
-                        sortBy='title'
-                        on-change=(route-action 'selectDataset')
-                        cache=true
-                        prompt='Search Datasets'
-                        class='item'}}
+  <div class="ui container">
+    {{#link-to 'application' class='item logo'}}
+      DCP Data Browser
+    {{/link-to}}
+    <div class="right menu">
+      {{searchable-select content=searchables
+                          sortBy='title'
+                          on-change=(route-action 'selectDataset')
+                          cache=true
+                          prompt='Search Datasets'
+                          class='item'}}
+    </div>
   </div>
 </div>
-
-{{outlet}}
+<div class="ui container">
+  {{outlet}}
+</div>

@@ -1,87 +1,57 @@
-<div style="position: fixed; bottom: 30px; right: 50px; z-index: 999;">
-  {{#ui-popup content="Download CSV" position='left center'}}
-    <a class="medium ui circular raised segment circular ui green icon button floating-menu" href={{download_link}} download={{model.dataset.table_name}}>
-      <i class="big file excel outline icon"></i>
-    </a>
-  {{/ui-popup}}
-</div>
+<div class="main-content-offset">
+  <div class="ui grid">
+    <div class="ui basic segment">
+      {{link-to '← SEE ALL' 'application'}} | {{join ' | ' model.dataset.tagsValues}}
+    </div>
+    <div style="position: fixed; bottom: 30px; right: 50px; z-index: 999;">
+      {{#ui-popup content="Download CSV" position='left center'}}
+        <a class="medium ui circular raised segment circular ui green icon button floating-menu" href={{download_link}} download={{model.dataset.table_name}}>
+          <i class="big file excel outline icon"></i>
+        </a>
+      {{/ui-popup}}
+    </div>
 
-{{#if (gt model.raw_data.rows.length perPage)}}
-  <div class="ui basic center aligned segment" style="position: fixed; width: 100%; bottom: 0; z-index: 999; pointer-events: none;">
-    <div class="ui button icon circular {{unless min 'disabled'}}" onclick={{action 'previous'}} style="pointer-events: all;">
-      <i class="ui left arrow icon"></i>
-    </div>
-    <div class="ui label">
-      Page {{page}}
-    </div>
-    <div class="ui button icon circular {{if (gte max model.raw_data.rows.length) 'disabled'}}" onclick={{action 'next'}} style="pointer-events: all;">
-      <i class="ui right arrow icon"></i>
-    </div>
-  </div>
-{{/if}}
+    <div class="ui basic main-table segment">
+      <div class="ui container">
+        <div class="ui clearing basic segment">
+          <h2 class="ui left floated header" style="max-width: 80%;">
+            <div class="content">
+              <h3 class="ui dividing header tags-header">{{model.dataset.menu3}}</h3>
+              <div class="sub header">
+                <b>Table</b>: {{model.dataset.table_name}}<br/>
+                <b>Source</b>: {{model.dataset.source}}<br/>
+                <b>Description</b>: {{model.dataset.description}}
+              </div>
+            </div>
+          </h2>
+        </div>
 
-<div class="ui container">
-  <div class="ui segment">
-    <div class="ui clearing segment basic">
-      <h5 class="ui right floated icon header">
-        {{link-to '' 'categories.sub-categories.datasets' model.dataset.menu1 model.dataset.menu2 class='circular clickable icon left arrow' tagName='i'}}
-        <div class="sub header">Go Back</div>
-      </h5>
-      <h2 class="ui left floated header" style="max-width: 80%;">
-        <i class="ui grid layout icon"></i>
-        <div class="content">
-          {{model.dataset.menu3}}
-          <div class="sub header">
-            Database Table: {{model.dataset.table_name}}<br/>
-            Source: {{model.dataset.source}}<br/>
-            Description: {{model.dataset.description}}
+        <div class="scroll-horizontal-rotated ui basic center aligned segment">
+          <div class="cancel-rotate">
+            {{#if (not model.raw_data.errors)}}
+              {{ui-table 
+                model=(slice min max model.raw_data.rows) 
+                fields=model.raw_data.fields 
+                metadata=model.metadata.rows}}
+            {{else}}
+              {{#each model.raw_data.errors as |error|}}
+                <h3 class="ui icon header">
+                  <i class="warning sign icon"></i>
+                  <div class="content">
+                    Oops. {{error.title}}.
+                    <div class="sub header">
+                      More detail: 
+                      {{#each error.detail.error as |errorMessage|}}
+                        {{errorMessage}}; we probably just need to sync and/or update permissions for this dataset.<br/><br/> We've been notified of the error and will work on it.
+                      {{/each}}
+                    </div>
+                  </div>
+                </h3>
+              {{/each}}
+            {{/if}}
           </div>
         </div>
-      </h2>
-    </div>
-    <div class="ui basic segment">
-      {{#if model.years_available.length}}
-        <div class="ui label">
-          Select Years: 
-        </div>
-      {{/if}}
-      {{#each model.years_available as |year|}}
-        <a class="ui {{if year.selected 'blue'}} label" {{action 'toggle' year}}>
-          <i class="calendar icon"></i> {{year.year}}
-        </a>
-      {{/each}}
-    </div>
-
-    <div class="scroll-horizontal-rotated ui raised center aligned segment">
-      <div class="cancel-rotate">
-        <div class="ui inverted segment">
-          {{#unless model.dataset.isMunicipal}}
-            Note: Viewing First 50 rows; Filters apply only to data export.
-          {{else}}
-            Note: Viewing Latest Year available; Filters apply only to data export.
-          {{/unless}}
-        </div>
-        {{#if (not model.raw_data.errors)}}
-          {{ui-table model=(slice min max model.raw_data.rows) fields=model.raw_data.fields metadata=model.metadata.rows}}
-        {{else}}
-          {{#each model.raw_data.errors as |error|}}
-            <h3 class="ui icon header">
-              <i class="warning sign icon"></i>
-              <div class="content">
-                Oops. {{error.title}}.
-                <div class="sub header">
-                  More detail: 
-                  {{#each error.detail.error as |errorMessage|}}
-                    {{errorMessage}}; we probably just need to sync and/or update permissions for this dataset.<br/><br/> We've been notified of the error and will work on it.
-                  {{/each}}
-                </div>
-              </div>
-            </h3>
-          {{/each}}
-        {{/if}}
       </div>
     </div>
-    
   </div>
 </div>
-{{outlet}}

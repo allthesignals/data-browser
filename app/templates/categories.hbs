@@ -3,44 +3,41 @@
     <div class="seven wide column tags">
       <div class="ui grid categories-split">
         <div class="row categories-split-top">
-          <div class="ui equal width grid">
-            <div class="column">
-              <div class="ui basic segment scrollable-menus">
-                <h3 class="ui dividing header tags-header">
-                  Categories
-                </h3>
-                {{#liquid-bind model use='toUp'}}
-                  {{menus-component model=model}}
-                {{/liquid-bind}}
-              </div>
-            </div>
-            {{outlet}}
-          </div>
+          <h3 class="ui dividing header tags-header">
+            Categories
+          </h3>
+          {{tags-menu model=model selected=selectedTags.tags}}
         </div>
         <div class="row categories-split-bottom">
+          <div class="ui basic segment">
+            Welcome.
+          </div>
         </div>
       </div>
     </div>
-    <div class="nine wide column">
-      <div class="eight wide column">
-        {{#liquid-bind model use='toUp'}}
-          <div class="ui raised segment scrollable-menus">
-            <h4 class="ui dividing header">
-              {{model.firstObject.menu2}}
-            </h4>
-            <div class="ui selection list">
-              {{#each model as |dataSet|}}
-                {{#link-to 'datasets' dataSet.id class='item'}}
-                  <div class="content">
-                    <div class="header">{{dataSet.menu3}}</div>
-                    <div class="description">{{category.values.length}} datasets</div>
-                  </div>
-                {{/link-to}}
-              {{/each}}
-            </div>  
-          </div>
-        {{/liquid-bind}}
-        {{outlet}}
+    <div class="nine wide column results-list">
+      <div class="scrollable-menus">
+        <h4 class="ui dividing header">
+          Datasets
+        </h4>
+        <div class="ui selection list">
+          {{#each filtered as |dataSet|}}
+            {{#link-to 'datasets' dataSet.id class='item'}}
+              <div class="content">
+                <div class="header">
+                  {{dataSet.menu3}}
+                  {{#each dataSet.tagsValues as |tag|}}
+                    <div class="ui basic mini label">
+                      {{tag}}
+                    </div>
+                  {{/each}}
+                </div>
+                <div class="description">
+                </div>
+              </div>
+            {{/link-to}}
+          {{/each}}
+        </div>  
       </div>
     </div>
   </div>
