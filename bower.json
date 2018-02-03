@@ -2,7 +2,6 @@
   "name": "data-browser",
   "dependencies": {
     "ember": "~2.10.0",
-    "ember-cli-shims": "~0.1.1",
-    "semantic-ui": "^2.2.9"
+    "ember-cli-shims": "~0.1.1"
   }
 }
