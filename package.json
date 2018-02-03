@@ -12,7 +12,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "postinstall": "cd vendor/semantic-ui && gulp build"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
