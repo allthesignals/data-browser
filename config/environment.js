@@ -23,7 +23,7 @@ module.exports = function(environment) {
     },
 
     googleFonts: [
-      'Montserrat:300,400,700'
+      'Montserrat:300,400,300italic,400italic'
     ],
 
     // Set or update content security policies
