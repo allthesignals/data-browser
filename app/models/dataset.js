@@ -14,12 +14,13 @@ export default DS.Model.extend({
   yearcolumn: DS.attr('string'),
   source: DS.attr('string'),
   description: DS.attr('string'),
+  endpoint: DS.attr('string'),
   tags: DS.attr(),
   tagsValues: Ember.computed('tags.[]', function() {
     return this.get('tags').map(tag => {
       const split = tag.split(TAG_META_SEPARATOR);
       const { length } = split;
-      return split.objectAt(length - 1);
+      return split.objectAt(length - 1).toLowerCase();
     });
   }),
   hasYears: Ember.computed('yearcolumn', function() {

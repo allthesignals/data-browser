@@ -10,16 +10,13 @@ export default Ember.Route.extend({
     let dataset = this.modelFor('application').findBy('id', params.dataset_id);
     let yearcolumn = dataset.get('yearcolumn');
     // SQL queries
-    let url = `${config.dataBrowserEndpoint}select * from ${dataset.get('table_name')} `;
+    let url = `${dataset.get('endpoint')}/api/v2/sql?q=select * from ${dataset.get('table_name')}`;
+
     if (endpoint) {
       url = `${endpoint}/api/v2/sql?q=select * from ${dataset.get('table_name')} `;
     }
 
-    if (dataset.get('isMunicipal') && dataset.get('hasYears')) {
-      url += `where ${yearcolumn}=(select max(${yearcolumn}) from ${dataset.get('table_name')}) order by municipal ASC;`;
-    } else {
-      url += ' LIMIT 50;';
-    }
+    url += ' LIMIT 50;';
 
     // fetch raw data for dataset
     let raw_data = this.get('ajax').request(url).then(function(raw_data) {

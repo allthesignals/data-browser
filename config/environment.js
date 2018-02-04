@@ -6,7 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-    dataBrowserIndex: 'https://nycplanning-web.carto.com/u/planninglabs',
+    dataBrowserIndex: ['https://planninglabs.carto.com', 'https://wilburnforce.carto.com'],
     dataBrowserEndpoint: 'https://planninglabs.carto.com/api/v2/sql?q=',
     s3endpoint: 'https://planninglabscatalog.nyc3.digitaloceanspaces.com',
     spatialJoinFields: [  { field: 'ct10_id', table: 'census_2010_tracts'}, 
