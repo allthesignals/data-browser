@@ -1,6 +1,6 @@
 # Carto Data Catalog
 
-This is an instant data catalog built primarily for Carto users. It provides a configurable interface for users to navigate through different groupings of public datasets on a user's Carto account. [See it in action](http://datacatalog.planninglabs.nyc/).
+The Data Catalog is an instant data catalog built primarily for Carto users who want a single public viewing space for all their datasets. It provides a configurable interface for users to navigate through different groupings of public datasets on a user's Carto account. [See it in action](http://datacatalog.planninglabs.nyc/).
 
 ## Preview
 ![data_catalog](https://github.com/allthesignals/data-browser/blob/master/CRMha02VYb.gif?raw=true)
@@ -14,6 +14,7 @@ You can also try this against your own account by visiting http://datacatalog.pl
  - Point to multiple Carto accounts 
  - Preview dataset and download link
  - Search all datasets
+ - Datasets marked Private in Carto are only visible to those who are logged in
  
 ## Coming Soon
  - Support for S3
