@@ -2,10 +2,25 @@
 
 This is an instant data catalog built primarily for Carto users. It provides a configurable interface for users to navigate through different groupings of public datasets on a user's Carto account. [See it in action](http://datacatalog.planninglabs.nyc/).
 
+## Preview
+![data_catalog](https://github.com/allthesignals/data-browser/blob/master/CRMha02VYb.gif?raw=true)
 
+You can also try this against your own account by visiting http://datacatalog.planninglabs.nyc and appending the following URL parameter: `?endpoint=YOUR_CARTO_ACCOUNT_URL`. For example, Planning Labs' account would be: https://datacatalog.planninglabs.nyc/?endpoint=https%3A%2F%2Fplanninglabs.carto.com. 
 
-# Preview
-![data_catalog](https://user-images.githubusercontent.com/5004319/35371709-be7204d6-0163-11e8-946e-3b54f5c8ad62.gif)
+## Features
+ - Public, searchable, and customizable catalog for you, your team, or your organizations Carto accounts
+ - Groups your Carto datasets' tags together for automatic filtering in the interface
+ - Sophisticated tagging system - categorize tags with metadata like so `fruit:banana` - the Data Catalog will only display the relevant values
+ - Point to multiple Carto accounts 
+ - Preview dataset and download link
+ - Search all datasets
+ 
+## Coming Soon
+ - Support for S3
+   - The Data Catalog will soon allow you to point to an S3 bucket on AWS or Digital Ocean. It will infer dataset "tags" from the dataset folders. 
+ - Box
+ - Dropbox
+ - Github
 
 ## Prerequisites
 
