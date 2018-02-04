@@ -1,6 +1,6 @@
 # Carto Data Catalog
 
-The Data Catalog is an instant data catalog built primarily for Carto users who want a single public viewing space for all their datasets. It provides a configurable interface for users to navigate through different groupings of public datasets on a user's Carto account. [See it in action](http://datacatalog.planninglabs.nyc/).
+The Data Catalog is an instant open data browser built primarily for Carto users who want a single public viewing place for all their datasets. It provides a configurable interface for users to navigate through different groupings of public datasets on a user's Carto account. [See it in action](http://datacatalog.planninglabs.nyc/).
 
 ## Preview
 ![data_catalog](https://github.com/allthesignals/data-browser/blob/master/CRMha02VYb.gif?raw=true)
