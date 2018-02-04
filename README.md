@@ -1,6 +1,8 @@
 # Carto Data Catalog
 
-This is a generic data catalog built for Carto users. It provides a configurable interface for users to navigate through different groupings of public datasets on a user's Carto account. [See it in action](http://databrowser.mapc.org/).
+This is an instant data catalog built primarily for Carto users. It provides a configurable interface for users to navigate through different groupings of public datasets on a user's Carto account. [See it in action](http://datacatalog.planninglabs.nyc/).
+
+
 
 # Preview
 ![data_catalog](https://user-images.githubusercontent.com/5004319/35371709-be7204d6-0163-11e8-946e-3b54f5c8ad62.gif)
