@@ -4,7 +4,7 @@ import config from '../config/environment';
 import Loader from '../utils/loader';
 
 const { set } = Ember;
-const { dataBrowserIndex } = config;
+let { dataBrowserIndex } = config;
 const MAX_DATASETS = 300;
 const API_PATH = function(index) {
   return `/api/v1/viz/?page=1&type=table&exclude_shared=false&per_page=${MAX_DATASETS}&locked=&tags=&shared=yes&only_liked=false&order=updated_at&exclude_raster=true&callback=vizjson${index}&show_stats=false&show_permission=false&show_table=false&show_likes=false`
@@ -13,6 +13,10 @@ const API_PATH = function(index) {
 export default DS.RESTAdapter.extend({
   findAll(store, type, sinceToken) {
     // accept an array or string
+    const endpointFromParams = (new URL(location.href)).searchParams.get('endpoint');
+    if (endpointFromParams) {
+      dataBrowserIndex = endpointFromParams;
+    }
     const endpoints = dataBrowserIndex.toString().split(',');
 
     const promises = endpoints.map((endpoint, index) => {
