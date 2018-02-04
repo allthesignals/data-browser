@@ -8,6 +8,7 @@ module.exports = function(environment) {
     locationType: 'auto',
     dataBrowserIndex: 'https://nycplanning-web.carto.com/u/planninglabs',
     dataBrowserEndpoint: 'https://planninglabs.carto.com/api/v2/sql?q=',
+    s3endpoint: 'https://planninglabscatalog.nyc3.digitaloceanspaces.com',
     spatialJoinFields: [  { field: 'ct10_id', table: 'census_2010_tracts'}, 
                           { field: 'muni_id', table: 'ma_municipalities'}
                         ],

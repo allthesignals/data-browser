@@ -9,7 +9,6 @@ export default Ember.Route.extend({
   model(params, { queryParams: { endpoint } }) {
     let dataset = this.modelFor('application').findBy('id', params.dataset_id);
     let yearcolumn = dataset.get('yearcolumn');
-    console.log(endpoint);
     // SQL queries
     let url = `${config.dataBrowserEndpoint}select * from ${dataset.get('table_name')} `;
     if (endpoint) {

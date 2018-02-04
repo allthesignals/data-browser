@@ -53,8 +53,6 @@ export default Ember.Component.extend({
       } else {
         selected.pushObject(key);
       }
-
-      console.log(selected)
     },
   },
 });
