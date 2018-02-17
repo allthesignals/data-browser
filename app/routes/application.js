@@ -13,7 +13,9 @@ export default Ember.Route.extend({
       .then(({ carto, s3 }) => {
         const stream = Ember.A();
         stream.pushObjects(carto.toArray());
-        stream.pushObjects(s3.toArray());
+
+        // not ready yet
+        // stream.pushObjects(s3.toArray());
         return stream;
       });
   },
