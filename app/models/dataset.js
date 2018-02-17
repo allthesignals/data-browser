@@ -15,6 +15,7 @@ export default DS.Model.extend({
   source: DS.attr('string'),
   description: DS.attr('string'),
   endpoint: DS.attr('string'),
+  type: 'carto',
   tags: DS.attr(),
   tagsValues: Ember.computed('tags.[]', function() {
     return this.get('tags').map(tag => {
