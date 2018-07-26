@@ -2,7 +2,7 @@ import config from '../config/environment';
 
 export default function imputeSpatiality(cartoTable) {
   // Ember.keys is deprecated, but Object.keys still needs a polyfill...
-  let spatialField = Ember.keys(cartoTable.fields).find(function(item) {
+  let spatialField = Object.keys(cartoTable.fields).find(function(item) {
     return config.spatialJoinFields.isAny('field', item);
   });
 
